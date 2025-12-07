@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import {
   BrowserRouter as Router,
@@ -8,8 +8,8 @@ import {
 
 import Login from "./pages/Auth/Login";
 import SignUp from "./pages/Auth/SignUp";
-import Home from "./pages/Dashboard/Home";
-import AllGroups from "./pages/Dashboard/AllGroups";
+import Dashboard from "./pages/Auth/Dashboard";
+//import AllGroups from "./pages/Dashboard/AllGroups";
 
 const App = () => {
   return (
@@ -19,8 +19,8 @@ const App = () => {
           <Route path='/' element={<Root/>}></Route>
           <Route path='/login'  exact element={<Login/>}></Route>
           <Route path='/signup' element={<SignUp/>}></Route>
-          <Route path='/dashboard' element={<Home/>}></Route>
-          <Route path='/all-groups' element={<AllGroups/>}></Route>
+          <Route path='/dashboard' element={<Dashboard/>}></Route>
+          
         </Routes>
       </Router>
     </div>
